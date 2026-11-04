@@ -1,0 +1,15 @@
+name: Action  file
+
+on:
+   push:
+      branches: [main]
+
+jobs:
+    demo:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Action Repo
+              run: |
+                  echo "Action file is Acurate"
+                  echo "Action is sucessfuly push code"
