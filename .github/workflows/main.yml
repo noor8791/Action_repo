@@ -1,15 +1,38 @@
-name: Action  file
+# code push kare ne ka code hai ye 
+# name: Action  file
+
+#on:
+#  push:
+#      branches: [main]
+#
+#jobs:
+#    demo:
+#        runs-on: ubuntu-latest
+#
+#        steps:
+#            - name: Action Repo
+#              run: |
+#                  echo "Action file is Acurate"
+#                  echo "Action is sucessfuly push code"
+
+
+# ye code hau schedule time par run karna hai ye code hai
+
+name: schedule file
 
 on:
-   push:
-      branches: [main]
+   schedule:
+       cron: "0 8 * * *"
 
 jobs:
     demo:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Action Repo
-              run: |
-                  echo "Action file is Acurate"
-                  echo "Action is sucessfuly push code"
+            - name: schedules
+              uses: Action background: 
+
+            - name:
+              run:
+                 echo "run Action schedule sucessfully file"
+
